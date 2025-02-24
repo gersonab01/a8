@@ -1,0 +1,215 @@
+body.white{
+    background-color: #fff;
+}
+body.white main{
+    color: black;
+    padding: 25px 0px;
+}
+body.white main h2{
+    margin-bottom: 25px;
+}
+body.white main p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+body.white main .titulo{
+    font-size: 18px;
+}
+body.white main .titulo i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+body.white main .titulo:after{
+    width: 100%;
+    height: 1px;
+    background-color: #a2a2a2;
+    max-width: initial;
+}
+@media only screen and (min-width: 1024px){
+    body.white main{
+        padding-left: 250px;
+    }
+}
+header{
+    width: 100%;
+    display: block;
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+header .conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+header .conteudo .right{
+    width: max-content;
+    max-width: calc(100% - 70px);
+    display: block;
+}
+header .conteudo .right .usuario{
+    width: max-content;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+header .conteudo .right .usuario i{
+    margin: 0 10px;
+}
+header .conteudo .right .usuario .foto{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393939;
+}
+header .conteudo .right .usuario .foto img{
+    width: 100%;
+    display: block;
+}
+header .conteudo .right .usuario .submenu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 15px 0px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #393939;
+    -webkit-box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.4);
+}
+header .conteudo .right .usuario .submenu li{
+    width: 100%;
+    display: block;
+    padding: 5px 20px;
+}
+header .conteudo .right .usuario .submenu li a{
+    width: 100%;
+    display: block;
+    line-height: 22px;
+    font-family: var(--font-family-medium);
+}
+header .conteudo .right .usuario .submenu li:hover{
+    background-color: black;
+}
+header .conteudo .right .usuario:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+header .conteudo .btn-nav{
+    font-size: 25px;
+}
+header .conteudo .nav{
+    width: 100vw;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: #393939;
+    box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: var(--transition-time);
+}
+header .conteudo .nav.active{
+    left: 0;
+}
+header .conteudo .nav .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+
+}
+header .conteudo .nav .top .logo{
+    width: 100%;
+    display: block;
+    padding: 20px 35px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+}
+header .conteudo .nav .top .logo img{
+    width: 100%;
+    display: block;
+}
+header .conteudo .nav .top ul{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+header .conteudo .nav .top p{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid var(--color-white);
+    opacity: 0.6;
+    line-height: 24px;
+    padding: 0 15px;
+}
+header .conteudo .nav .top ul li{
+    width: 100%;
+    display: block;
+}
+header .conteudo .nav .top ul li a{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+header .conteudo .nav .top ul li a i{
+    margin-right: 10px;
+}
+header .conteudo .nav .top ul li:hover,
+header .conteudo .nav .top ul li.active{
+    background-color: var(--color-black);
+}
+header .conteudo .nav .copy {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+header .conteudo .nav .copy p{
+    font-size: 12px;
+    text-align: center;
+}
+@media only screen and (min-width: 1024px){
+    header .conteudo{
+        justify-content: flex-end;
+    }
+    header .conteudo .right{
+        max-width: 50%;
+    }
+    header .conteudo .btn-nav{
+        display: none;
+    }
+    header .conteudo .nav{
+        width: 250px;
+        left: 0;
+    }
+
+}
+.dashboard{
+    width: 100%;
+    display: block;
+}
+.dashboard .conteudo{
+    width: 100%;
+    display: block;
+}
